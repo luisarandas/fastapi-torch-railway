@@ -12,7 +12,7 @@ $ (ubu) source venv/bin/activate
 (Start server local:)
 $ uvicorn app:app --host 0.0.0.0 --port 45678
 $ http://0.0.0.0:45678/ (or do 127.0.0.1)
-(Using railway.json $PORT is automatic)
+(Using railway.json $PORT should be automatic)
 ```
-
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/8V-u3B)
 ![example](media/example.png)
