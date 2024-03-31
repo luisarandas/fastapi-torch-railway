@@ -1,7 +1,4 @@
-// 31-03-2024 luisarandas
-
 // Upload listener
-
 document.getElementById('uploadform').addEventListener('submit', async function(e) {
     e.preventDefault();
     const formData = new FormData(this);
@@ -38,7 +35,6 @@ document.getElementById('uploadform').addEventListener('submit', async function(
 
 
 // Classifier listener
-
 document.getElementById('process_1').addEventListener('click', async () => {
     const placeholder = document.querySelector('.imageplaceholder1');
     const imgElement = placeholder.querySelector('img:last-child');

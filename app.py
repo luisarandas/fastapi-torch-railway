@@ -1,5 +1,3 @@
-
-
 # 01-03-2024 luis arandas
 # Small FastAPI server for DL image app
 
