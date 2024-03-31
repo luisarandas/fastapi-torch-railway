@@ -15,4 +15,4 @@ $ http://0.0.0.0:45678/ (or do 127.0.0.1)
 (Using railway.json $PORT is automatic)
 ```
 
-![example](example.png)
+![example](media/example.png)

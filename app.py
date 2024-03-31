@@ -17,8 +17,6 @@ from fastapi.staticfiles import StaticFiles
 from typing import List # integrate with older Python versions I think
 
 from PIL import Image
-
-
 from torchvision.models import ViT_L_32_Weights, vit_l_32
 
 import logging
