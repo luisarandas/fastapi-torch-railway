@@ -23,11 +23,9 @@ import requests
 logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s - %(levelname)s - %(name)s - %(message)s')
 
-
-
 image_dir = "images"
 upload_dir = "uploads"
-
+media_dir = "media" 
 
 os_details = {
     "System": platform.system(),
@@ -46,12 +44,15 @@ for detail, value in os_details.items():
 
 
 def setup_root_app_directory():
-    global image_dir
+    if os.path.exists(media_dir):
+        shutil.rmtree(media_dir)
+        print(f"Deleted existing directory: {media_dir}")    
     if not os.path.exists(image_dir):
         os.makedirs(image_dir)
-    global upload_dir
+        print(f"Created directory: {image_dir}")
     if not os.path.exists(upload_dir):
         os.makedirs(upload_dir)
+        print(f"Created directory: {upload_dir}")
 
 
 app = FastAPI(title="fastapi-image-app")
